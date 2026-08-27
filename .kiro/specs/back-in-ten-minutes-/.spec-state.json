@@ -1,0 +1,43 @@
+{
+  "decisions": [
+    {
+      "id": "input-format",
+      "title": "Should the facilitator POST a duration (minutes) or an absolute end time?",
+      "options": ["Duration in minutes", "Absolute end time (HH:MM)"],
+      "recommended": "Duration in minutes",
+      "answer": "Duration in minutes"
+    },
+    {
+      "id": "concurrent-timers",
+      "title": "If a timer is already running and a new one is set, should it replace, reject, or allow multiple?",
+      "options": ["Replace silently", "Reject with 409", "Allow multiple concurrent"],
+      "recommended": "Replace silently",
+      "answer": "Allow multiple concurrent"
+    },
+    {
+      "id": "empty-state-message",
+      "title": "What does the card show before any timer is set?",
+      "options": ["No break set", "Break soon, don't worry!"],
+      "recommended": "Break soon, don't worry!",
+      "answer": "Break soon, don't worry!"
+    },
+    {
+      "id": "card-layout",
+      "title": "How should multiple timers appear on the card?",
+      "options": ["Stacked vertically (all visible)", "Only show soonest-expiring"],
+      "recommended": "Stacked vertically (all visible)",
+      "answer": "Stacked vertically (all visible)"
+    },
+    {
+      "id": "expired-visibility",
+      "title": "Should expired timers stay visible on the card?",
+      "options": ["Yes, show Time's up! until all clear for 5 min", "No, remove immediately"],
+      "recommended": "Yes, show Time's up! until all clear for 5 min",
+      "answer": "Yes, show Time's up! until all clear for 5 min"
+    }
+  ],
+  "blocking": null,
+  "context": {
+    "template": "reactions"
+  }
+}
